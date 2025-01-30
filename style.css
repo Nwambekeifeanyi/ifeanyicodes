@@ -291,7 +291,7 @@
     font-size: .8rem;
     line-height: 1;
     /* border: 2px solid red; */
-    /* text-align: justify; */
+    text-align: left;
     /* font-weight: 100; */
     margin: 0;
     padding: 0;
@@ -453,12 +453,12 @@
 }
 .text p{
   line-height: 1;
-  font-size: .7rem;
+  font-size: .5rem;
   margin: 0;
 
 }
 .text h6{
- font-size: .8rem;
+ font-size: .5rem;
  padding-top: 3%;
  line-height: 1;
  color: #a8a8a8;
@@ -466,6 +466,7 @@
 }
 .text a button{
   font-size: .7rem;
+  margin-bottom: 20%;
 }
 
 .text .statistics{
