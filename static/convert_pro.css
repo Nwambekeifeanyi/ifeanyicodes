@@ -1,0 +1,1356 @@
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+:root{
+      --main-bg: rgb(255, 81, 0);
+      --light-bg: rgb(252, 249, 249);
+      --light-t: rgb(75, 75, 75);
+}
+
+.navigation{
+      /* border: 2px solid rgb(255, 83, 3); */
+      background-color: rgb(255, 255, 255) !important;
+    padding: 1% 3% !important;
+    position: fixed !important;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation .logo a{
+      /* border: 2px solid red; */
+      font-family: serif;
+font-weight: bold;
+font-size: 1.5rem;
+text-decoration: none;
+color: black;
+
+}
+.navigation .logo a em{
+     font-style: normal;
+     color: var(--main-bg);
+
+}
+
+.menu{
+      /* display: flex; */
+      /* border: 2px solid rgb(115, 255, 0); */
+      width: 25%;
+      /* margin-left: 25%; */
+      height: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+}
+.menu-icon{
+      display: none;
+}
+.menu ul{
+      /* border: 2px solid red; */
+      /* margin-left: 40%; */
+      width: 100% !important;
+      display: flex;
+      justify-content: space-between !important;
+      margin: 0;
+}
+.menu ul li{
+      
+      list-style: none;
+}
+.menu ul li a{
+      color: black !important;
+      white-space: nowrap;
+      list-style: none;
+      text-decoration: none;
+}
+.menu ul li:hover a{
+      color: var(--main-bg) !important;
+}
+
+
+/* ====================================== .account ======================================== */
+.account{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 17%;
+      /* border: 2px solid red; */
+      height: 8vh;
+
+
+}
+
+.account-small{
+      display: none;
+}
+.account .login a button{
+      background-color: #ffffff00;
+      border: #ffffff00;
+
+}
+
+.account .get-started{
+      width: 60%;
+      height: 100%;
+}
+
+.account .get-started a button{
+      background-color: var(--main-bg);
+      padding: 5% 0%;
+      height: 7.5vh;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: 600;
+      /* white-space: nowrap; */
+}
+
+/* ================================ home ========================================= */
+.home{
+      /* border: 2px solid red; */
+      height: 90vh;
+      display: flex;
+      padding: 0 4%;
+      padding-top: 15vh;
+}
+
+
+.home .text{
+      width: 55%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+.home .text span{
+      font-size: 2.5rem;
+      font-weight: 700;
+}
+.home .text p{
+      margin-bottom: -.8%;
+      font-family: sans-serif;
+      color: var(--light-t);
+      /* border: 2px solid red; */
+      width: 70%;
+
+}
+.home .text .btns{
+      margin-top: 5%;
+      display: flex;
+      /* border: 2px solid red; */
+      width: 42%;
+      justify-content: space-between;
+}
+.home .text .btns .btn-div{
+      width: 45%;
+      height: 8vh;
+}
+.home .text .btns .btn-div button{
+      width: 100%;
+      height: 100%;
+      border: 2px solid var(--main-bg);
+      border-radius: 5px;
+}
+.home .text .btns .get-started button{
+      background-color: var(--main-bg);
+      color: white;
+}
+.home .text .btns .login button{
+      background-color: transparent;
+      color: var(--main-bg);
+}
+
+
+.home .image-container{
+      width: 45%;
+}
+.home .image-container .image{
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+}
+.home .image-container .image img{
+      width: 100%;
+      height: 100%;
+}
+
+
+/* =============================== section-top =============================== */
+.section-top{
+      /* border: 2px solid red; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: fit-content;
+}
+.section-top p{
+      color: black;
+      /* border: 2px solid red; */
+      font-size: .9rem;
+
+}
+.section-top span{
+      font-weight: bold;
+      font-size: 1.5rem;
+}
+
+/* ================================ format ================================= */
+.format-container{
+ /* border: 2px solid red; */
+ width: 76%;
+ margin-left: 12%;
+ margin-top: 7%;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+}
+
+.format{
+      /* border: 2px solid red; */
+      width: 92%;
+      margin-left: 4%;
+      margin-bottom: 8%;
+      display: flex;
+      padding: 6% 2%;
+      border-radius: 5px;
+      box-shadow: 1px 1px 3px rgb(184, 184, 184);
+}
+.format .text{
+      
+      padding: 0% 5%;
+}
+.format .text span{
+      font-weight: bold;
+      font-size: 1rem;
+}
+.format .text p{
+      font-size: .9rem;
+      line-height: 1;
+      color: var(--light-t);
+}
+.format .icon a{
+      text-decoration: none;
+      color: black;
+}
+
+.sell-all-tools{
+ display: flex;
+ justify-content: center;
+ /* border: 2px solid red; */
+ width: 80% !important;
+ margin-left: 10%;
+ margin-top: 1%;
+margin-bottom: 3%;
+
+}
+.sell-all-tools a button{
+background-color: var(--main-bg);
+padding: 12% 20%;
+border: none;
+white-space: nowrap;
+color: white;
+border-radius: 7px;
+}
+
+
+/* ============================= feature-container ============================ */
+.feature-top{
+      /* border: 2px solid red; */
+height: fit-content;
+background-color: var(--light-bg);
+}
+
+.feature-section{
+      background-color: var(--light-bg);
+      padding-bottom: 5%;
+      margin-bottom: 6%;
+
+}
+.feature-container{
+      /* border: 2px solid red; */
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 70%;
+      margin-left: 15%;
+      padding-top: 3%;
+}
+.feature{
+      /* border: 2px solid red; */
+      width: 90%;
+      height: 32vh;
+      margin-top: 7%;
+      margin-left: 5%;
+      padding: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 3px;
+      box-shadow: 1px 1px 3px rgb(184, 184, 184);
+}
+.feature .text span{
+      font-weight: bold;
+      font-size: 1rem;
+}
+.feature .text p{
+      font-size: .9rem;
+      line-height: 1;
+      color: var(--light-t);
+}
+
+/* ================================== steps-container ============================== */
+.steps-container{
+      /* border: 2px solid red; */
+      padding-bottom: 7%;
+      padding-top: 3%;
+      width: 100%;
+      /* margin-left: 5%; */
+}
+
+
+.steps-container .steps{
+     display: flex;
+     width: 70%;
+     margin-left: 15%;
+      /* border: 2px solid rgb(0, 255, 55); */
+     justify-content: space-between;
+
+
+}
+.steps-container .steps img{
+    
+     margin-left: -5%;
+     margin-top: -10%;
+
+
+}
+.steps-container .step{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     /* border: 2px solid rgb(19, 175, 14); */
+
+
+}
+
+.steps-container .step .number{
+      font-size: 2.2rem;
+      -webkit-text-fill-color: var(--main-bg);
+    -webkit-text-stroke: 1px #000000;
+    font-family: cursive;
+}
+
+
+.steps-container .step:first-child .number{
+      transform: rotate(-10deg);
+ }
+ .steps-container .step:nth-child(3) .number{
+      transform: rotate(10deg);
+ }
+ .steps-container .step:last-child .number{
+      transform: rotate(-10deg);
+ }
+ 
+
+.steps-container .step span{
+     text-align: center;
+     width: 100% !important;
+     /* border: 2px solid red; */
+     font-weight: bold;
+     font-size: .9rem;
+}
+.steps-container .step p{
+     text-align: center;
+   width: 95%;
+     font-size: .9rem;
+     line-height: 1;
+     color: var(--light-t);
+}
+
+
+/* ================================ industrial-trust ============================= */
+.industrial-top p{
+      color: var(--light-t);
+}
+.industrial-trust{
+      /* border: 2px solid red; */
+      margin-bottom: 8%;
+      background-image: url(./image/new-entry/Company-Love-Us.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      padding: 7% 2%;
+}
+.industrial-trust .industry{
+      /* border: 2px solid red; */
+      width: 100%;
+     margin-top: 2%;
+      display: flex;
+      position: relative;
+      overflow: hidden;
+
+
+}
+.industrial-trust .industry .images{
+      /* border: 2px solid red; */
+      width: 200%;
+      white-space: nowrap;
+      display: flex;
+      position: relative;
+
+      /* animation: slide 10s infinite; */
+}
+
+.industrial-trust .industry .images img{
+     margin-right: 3.96%;
+     z-index: 2;
+     /* width: calc(200 / 7); */
+     /* border: 2px solid rgb(0, 255, 136); */
+     
+}
+
+@keyframes slide {
+      0%{
+            transform: translateX(0%);
+      }
+      100%{
+            transform: translateX(-77%);
+      }
+}
+
+/* =========================================== testimonial-container ================================== */
+.testimonial-container{
+      /* border: 2px solid red; */
+      padding: 1% 0%;
+      margin-bottom: 4%;
+      display: flex;
+    overflow-x: auto;
+    width: 86%;
+    margin-left: 7%;
+    margin-top: 5%;
+    background-color: var(--light-bg);
+    /* -ms-overflow-style: inherit; */
+
+}
+.testimonial-container::-webkit-scrollbar {
+      /* display: block; */
+     height: 5px;
+     background-color: rgb(197, 197, 197);
+
+    }
+.testimonial-container::-webkit-scrollbar-thumb {
+      
+     background-color: rgb(110, 110, 110);
+     border-radius: 5px;
+
+    }
+.testimonial-container .testimonial{
+      width: 30%;
+      flex: 0 0 auto;
+      /* border: 2px solid red; */
+      margin-right: 5%;
+      padding: 1%;
+      background-color: #fff;
+      box-shadow: 1px 1px 3px rgb(184, 184, 184);
+
+
+}
+.testimonial-container .testimonial .image{
+      width: 70px;
+      height: 70px;
+      overflow: hidden;
+}
+.testimonial-container .testimonial .image img{
+      width: 100%;
+      height: 100%;
+}
+.testimonial-container .testimonial .content{
+      line-height: 1;
+      text-align: justify;
+      color: var(--light-t);
+      margin-bottom: 8%;
+      font-size: .9rem;
+}
+.testimonial-container .testimonial .name{
+      line-height: 1;
+      color: var(--main-bg);
+      font-size: .8rem;
+}
+.testimonial-container .testimonial .company{
+      line-height: 1;
+      font-weight: 600;
+      font-size: .9rem;
+      font-family: sans-serif;
+}
+
+/* ================================== plans-container ============================= */
+.plans-container{
+      /* border: 2px solid red; */
+      display: flex;
+      width: 70%;
+      margin-left: 15%;
+      justify-content: space-between;
+      margin-top: 3%;
+      margin-bottom: 3%;
+}
+.plans-container .plan{
+      /* border: 2px solid red; */
+      padding: 1.5%;
+      border-radius: 5px;
+      background-color: var(--light-bg);
+      width: 32%;
+      height: 75vh;
+      box-shadow: 1px 1px 3px rgb(184, 184, 184);
+
+}
+
+.plans-container .plan .type{
+      color: #000000;
+}
+.plans-container .plan .amount{
+      /* border: 2px solid red; */
+      color: #000000;
+      font-size: 1.5rem;
+      font-weight: bold;
+}
+.plans-container .plan .amount em{
+      font-size: .8rem;
+}
+.plans-container .plan .description{
+      font-size: .8rem;
+      padding: 4% 0;
+}
+.plans-container .plan a button{
+      width: 100%;
+      border: none;
+      background-color: var(--main-bg);
+      border-radius: 5px;
+      font-size: .8rem;
+      color: white;
+      padding: 2% 0;
+}
+.plans-container .plan .plan-feature{
+      padding: 4% 0;
+      font-size: .8rem;
+      color: var(--light-t);
+
+}
+.plans-container .plan .feat{
+      font-size: .8rem;
+      padding: 2% 0;
+
+}
+
+
+/* =============================== .plan:nth-child(2) ============================== */
+.plans-container .plan:nth-child(2){
+      /* border: 2px solid rgb(0, 255, 13); */
+      padding: 1.5%;
+      background-color: var(--main-bg);
+      color: white !important;
+}
+
+.plans-container .plan:nth-child(2) .type{
+      color: #ffffff;
+}
+
+.plans-container .plan:nth-child(2) .amount{
+      color: #ffffff;
+}
+
+.plans-container .plan:nth-child(2) .plan-feature{
+      
+      color: white;
+
+}
+
+.plans-container .plan:nth-child(2) a button{
+     
+      background-color: var(--light-bg);
+      color: var(--main-bg);
+}
+
+/* ==================================== FAQs-container ========================================== */
+.FAQs-container{
+      /* border: 2px solid red; */
+      width: 72%;
+      margin-left: 14%;
+}
+.FAQs-container .accordion{
+     margin-top: 10%;
+     padding: 2%;
+}
+.FAQs-container .accordion-item{
+      /* border: 2px solid red; */
+      margin-bottom: 1%;
+
+}
+.FAQs-container .accordion-item .accordion-button{
+      background-color: var(--light-bg);
+}
+
+/* ============================== start-converting =========================== */
+.start-converting{
+      /* border: 2px solid red; */
+      width: 75%;
+      margin-left: 12.5%;
+      background-color: var(--light-bg);
+      padding: 3%;
+}
+.start-converting span{
+      font-weight: bold;
+      font-size: 1.5rem;
+}
+.start-converting span em{
+     color: var(--main-bg);
+     font-style: normal;
+}
+
+.start-converting p{
+      color: var(--light-t);
+      /* border: 2px solid red; */
+      font-size: .9rem;
+      width: 58%;
+      line-height: 1;
+      padding-top: .8%;
+}
+
+.start-converting button{
+      background-color: var(--main-bg);
+      color: white;
+      border: none;
+      padding: .8% 2%;
+      border-radius: 5px;
+}
+
+/* ==================================== footer ================================ */
+footer{
+      background-color: var(--light-bg);
+      margin-top: 7%;
+      display: flex;
+      padding: 3%;
+}
+footer .comment{
+      width: 40%;
+      /* border: 2px solid red; */
+
+}
+footer .comment span{
+      font-weight: bold;
+      font-size: 1.5rem;
+}
+footer .comment span em{
+      color: var(--main-bg);
+      font-style: normal;
+ }
+footer .comment p{
+      width: 60%;
+      text-align: justify;
+      line-height: 1;
+margin: 0;
+font-size: .9rem;
+padding: .4% 0;
+/* color: var(--light-t); */
+      /* word-spacing: -.2rem; */
+}
+footer .content-container{
+     display: flex;
+     width: 60%;
+     justify-content: space-between;
+     padding: 4%;
+}
+footer .content-container .content span{
+     font-weight: bold;
+}
+footer .content-container .content p{
+     text-decoration: none;
+     margin: 0;
+     padding: 1.5% 0;
+     /* border: 2px solid red; */
+
+}
+footer .content-container .content p a{
+     text-decoration: none;
+      font-size: .8rem;
+      color: black;
+      display: flex;
+}
+
+/* ============================== copyright ================================ */
+.copyright div{
+      text-align: center;
+      padding: 3%;
+      font-size: .8rem;
+      background-color: var(--light-bg);
+      color: var(--light-t);
+}
+
+
+/* ============================================= MOBILE VIEW ======================================= */
+/* ============================ navigation =============================== */
+@media only screen and (max-width: 920px){
+      /* .navigation{
+            border: 2px solid rgb(255, 83, 3);
+            background-color: rgb(255, 255, 255) !important;
+          padding: 1% 5% !important;
+          position: fixed !important;
+          width: 100%;
+          z-index: 1;
+          display: flex;
+          justify-content: space-between;
+      } */
+      
+      .navigation .logo{
+      /* border: 2px solid red; */
+     display: flex;
+     align-items: center;
+      
+      }
+     
+     
+      .menu{
+            display: none;
+      
+      }
+      .menu-icon{
+            display: block;
+      }
+      .menu-icon button{
+            background-color: transparent;
+            border: none;
+            font-size: 2rem;
+      }
+      
+      
+      /* ====================================== .account ======================================== */
+      .account{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 45%;
+            /* border: 2px solid red; */
+            height: 8vh;
+      
+      
+      }
+      
+      
+      .account .login{
+           display: none;
+      
+      }
+      
+      .account .get-started{
+            /* border: 2px solid red; */
+
+            width: 70%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+      }
+      
+      .account .get-started a button{
+            background-color: var(--main-bg);
+            padding: 5% 10px;
+            height: 5vh;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: 600;
+            white-space: nowrap;
+      }
+}
+
+
+/* ================================ home ========================================= */
+@media only screen and (max-width: 920px){
+.home{
+      height: fit-content;
+      flex-direction: column;
+      /* border: 2px solid rgb(0, 255, 21); */
+      width: 100% !important;
+      display: flex;
+      padding: 0 4%;
+      padding-top: 15vh;
+      margin-bottom: 80px;
+}
+
+
+.home .text{
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+.home .text span{
+      font-size: 1.4rem;
+      text-align: center;
+      font-weight: 700;
+}
+.home .text p{
+      width: 100%;
+      text-align: center;
+      font-size: .8rem;
+      margin-top: 2%;
+      /* border: 2px solid red; */
+}
+.home .text .btns{
+      margin-top: 10%;
+      margin-bottom: 5%;
+      /* border: 2px solid red; */
+      width: 100%;
+}
+.home .text .btns .btn-div{
+      width: 45%;
+      height: 5vh;
+}
+.home .image-container{
+      width: 100%;
+}
+
+
+}
+
+/* =============================== section-top =============================== */
+@media only screen and (max-width: 920px){
+      .section-top{
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: fit-content;
+            width: 100%;
+            
+      }
+      .section-top p{
+            color: black;
+            /* border: 2px solid red; */
+            font-size: .7rem;
+      
+      }
+      .section-top span{
+            font-weight: bold;
+            font-size: .8rem;
+            margin-top: -1%;
+      }
+      }
+
+
+/* ================================ format ================================= */
+@media only screen and (max-width: 920px){
+      .format-container{
+            /* border: 2px solid red; */
+            width: 100%;
+            margin-left: 0%;
+            margin-top: 7%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+           }
+           
+           .format{
+                 /* border: 2px solid red; */
+                 width: 80%;
+                 margin-left: 10%;
+                 padding: 5% 2%;
+           }
+
+           .sell-all-tools{
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid red; */
+            width: 80% !important;
+            margin-left: 10%;
+            margin-top: 1%;
+           margin-bottom: 3%;
+           
+           }
+           .sell-all-tools a button{
+           background-color: var(--main-bg);
+           padding: 10% 20%;
+           border: none;
+           white-space: nowrap;
+           color: white;
+           border-radius: 7px;
+           }
+           
+           
+      }
+
+
+/* ============================= feature-container ============================ */
+@media only screen and (max-width: 920px){
+.feature-top{
+      /* border: 2px solid red; */
+height: fit-content;
+background-color: var(--light-bg);
+padding: 5% 0;
+margin-top: 30px;
+}
+
+.feature-section{
+      background-color: var(--light-bg);
+      padding-bottom: 5%;
+      margin-bottom: 6%;
+
+}
+.feature-container{
+      /* border: 2px solid red; */
+      grid-template-columns: repeat(1, 1fr);
+     
+}
+.feature{
+      /* border: 2px solid red; */
+      width: 90%;
+      height: 28vh;
+
+      
+}
+
+      }
+/* ================================== steps-container ============================== */
+@media only screen and (max-width: 920px){
+   
+      
+      .steps-container .steps{
+           display: flex;
+           width: 70%;
+           margin-left: 15%;
+            /* border: 2px solid rgb(0, 255, 55); */
+           justify-content: space-between;
+           flex-direction: column;
+      
+      
+      }
+      .steps-container .steps img{
+          
+           margin-left: -5%;
+           margin-top: -10%;
+           display: none;
+      
+      
+      }
+      .steps-container .step{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           /* border: 2px solid rgb(19, 175, 14); */
+      
+      
+      }
+      
+      .steps-container .step .number{
+            font-size: 2.2rem;
+            -webkit-text-fill-color: var(--main-bg);
+          -webkit-text-stroke: 1px #000000;
+          font-family: cursive;
+      }
+      
+      
+      .steps-container .step:first-child .number{
+            transform: rotate(-10deg);
+       }
+       .steps-container .step:nth-child(3) .number{
+            transform: rotate(10deg);
+       }
+       .steps-container .step:last-child .number{
+            transform: rotate(-10deg);
+       }
+       
+      
+      .steps-container .step span{
+           text-align: center;
+           width: 100% !important;
+           /* border: 2px solid red; */
+           font-weight: bold;
+           font-size: .9rem;
+      }
+      .steps-container .step p{
+           text-align: center;
+         width: 95%;
+           font-size: .9rem;
+           line-height: 1;
+           color: var(--light-t);
+      }
+      
+
+}
+
+
+/* ================================ industrial-trust ============================= */
+@media only screen and (max-width: 920px){
+      .industrial-top p{
+            color: var(--light-t);
+      }
+      .industrial-trust{
+            /* border: 2px solid red; */
+            margin-bottom: 8%;
+            background-image: url(./image/new-entry/Company-Love-Us.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 7% 2%;
+      }
+      .industrial-trust .industry{
+            /* border: 2px solid red; */
+            width: 100%;
+           margin-top: 2%;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+      
+      
+      }
+      .industrial-trust .industry .images{
+            /* border: 2px solid red; */
+            width: 200%;
+            white-space: nowrap;
+            display: flex;
+            position: relative;
+      
+            animation: slide 10s infinite;
+      }
+      
+      .industrial-trust .industry .images img{
+           margin-right: 3%;
+           width: 50px;
+           z-index: 2;
+      }
+      
+      }
+
+/* =========================================== testimonial-container ================================== */
+@media only screen and (max-width: 920px){
+.testimonial-container{
+      /* border: 2px solid red; */
+      overflow: hidden;
+      padding: 1%;
+      margin-bottom: 4%;
+      display: flex;
+    overflow-x: auto;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 5%;
+    background-color: var(--light-bg);
+    /* -ms-overflow-style: inherit; */
+
+}
+
+.testimonial-container .testimonial{
+      width: 60%;
+      flex: 0 0 auto;
+      /* border: 2px solid red; */
+      margin-right: 5%;
+      padding: 3%;
+      background-color: #fff;
+      box-shadow: 1px 1px 3px rgb(184, 184, 184);
+
+
+}
+.testimonial-container .testimonial .image{
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+}
+.testimonial-container .testimonial .image img{
+      width: 100%;
+      height: 100%;
+}
+.testimonial-container .testimonial .content{
+      line-height: 1;
+      text-align: justify;
+      color: var(--light-t);
+      margin-bottom: 100px;
+      font-size: .9rem;
+}
+
+
+}
+
+
+
+
+/* ==================================== footer ================================ */
+@media only screen and (max-width: 920px){
+footer{
+      background-color: var(--light-bg);
+      margin-top: 7%;
+      display: flex;
+      padding: 3%;
+      width: 100%;
+      /* border: 2px solid red; */
+}
+footer .comment{
+      width: 40%;
+      /* border: 2px solid red; */
+
+}
+footer .comment span{
+      font-weight: bold;
+      font-size: 1.5rem;
+}
+footer .comment span em{
+      color: var(--main-bg);
+      font-style: normal;
+ }
+footer .comment p{
+      width: 60%;
+      text-align: justify;
+      line-height: 1;
+margin: 0;
+font-size: .9rem;
+padding: .4% 0;
+/* color: var(--light-t); */
+      /* word-spacing: -.2rem; */
+}
+footer .content-container{
+     display: flex;
+     width: 60%;
+     justify-content: space-between;
+     padding: 4%;
+}
+footer .content-container .content span{
+     font-weight: bold;
+}
+footer .content-container .content p{
+     text-decoration: none;
+     margin: 0;
+     padding: 1.5% 0;
+     /* border: 2px solid red; */
+
+}
+footer .content-container .content p a{
+     text-decoration: none;
+      font-size: .8rem;
+      color: black;
+      display: flex;
+}
+
+}
+
+
+
+/* ================================== plans-container ============================= */
+@media only screen and (max-width: 920px){
+.plans-container{
+      /* border: 2px solid red; */
+      overflow: hidden;
+      display: flex;
+      width: 100%;
+      margin-left: 0%;
+      margin-top: 3%;
+      margin-bottom: 3%;
+      flex-direction: column;
+}
+.plans-container .plan{
+      /* border: 2px solid red; */
+      padding: 1.5%;
+      border-radius: 5px;
+      background-color: var(--light-bg);
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 20px;
+      height: 75vh;
+}
+
+.plans-container .plan .type{
+      color: #000000;
+}
+.plans-container .plan .amount{
+      /* border: 2px solid red; */
+      color: #000000;
+      font-size: 1.5rem;
+      font-weight: bold;
+}
+.plans-container .plan .amount em{
+      font-size: .8rem;
+}
+.plans-container .plan .description{
+      font-size: .8rem;
+      padding: 4% 0;
+}
+.plans-container .plan a button{
+      width: 90%;
+      margin-left: 5%;
+      border: none;
+      background-color: var(--main-bg);
+      border-radius: 5px;
+      font-size: .8rem;
+      color: white;
+      padding: 2% 0;
+}
+.plans-container .plan .plan-feature{
+      padding: 4% 0;
+      font-size: .8rem;
+      color: var(--light-t);
+
+}
+.plans-container .plan .feat{
+      font-size: .8rem;
+      padding: 2% 0;
+
+}
+
+
+/* =============================== .plan:nth-child(2) ============================== */
+.plans-container .plan:nth-child(2){
+      /* border: 2px solid rgb(0, 255, 13); */
+      padding: 1.5%;
+      background-color: var(--main-bg);
+      color: white !important;
+}
+
+.plans-container .plan:nth-child(2) .type{
+      color: #ffffff;
+}
+
+.plans-container .plan:nth-child(2) .amount{
+      color: #ffffff;
+}
+
+.plans-container .plan:nth-child(2) .plan-feature{
+      
+      color: white;
+
+}
+
+.plans-container .plan:nth-child(2) a button{
+     
+      background-color: var(--light-bg);
+      color: var(--main-bg);
+}
+
+}
+
+
+/* ==================================== FAQs-container ========================================== */
+@media only screen and (max-width: 920px){
+.FAQs-container{
+      /* border: 2px solid red; */
+      width: 100%;
+      margin-left: 0;
+      /* padding: 3% 0; */
+}
+.FAQs-container .accordion{
+     margin-top: 10%;
+     padding: 2%;
+     width: 96%;
+     margin-left: 2%;
+}
+.FAQs-container .accordion-item{
+      /* border: 2px solid red; */
+      margin-bottom: 2%;
+
+}
+.FAQs-container .accordion-item .accordion-button{
+      background-color: var(--light-bg);
+}
+
+}
+
+/* ============================== start-converting =========================== */
+@media only screen and (max-width: 920px){
+.start-converting{
+      /* border: 2px solid red; */
+      width: 100%;
+      overflow: hidden;
+      margin-left: 0;
+      background-color: var(--light-bg);
+      padding: 3%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+.start-converting span{
+      font-weight: bold;
+      /* border: 2px solid red; */
+      font-size: 1rem;
+      width: 75%;
+      text-align: center;
+}
+
+
+.start-converting p{
+      color: var(--light-t);
+      /* border: 2px solid red; */
+      font-size: .9rem;
+      width: 100%;
+      text-align: center;
+      line-height: 1;
+      padding-top: 15px;
+}
+
+.start-converting button{
+    white-space: nowrap;
+      padding: 10px;
+}
+}
+
+@media only screen and (max-width: 920px){
+      /* ==================================== footer ================================ */
+footer{
+      background-color: var(--light-bg);
+      margin-top: 7%;
+      display: flex;
+      flex-direction: column;
+      padding: 3%;
+}
+footer .comment{
+      width: 100%;
+      /* border: 2px solid red; */
+
+}
+footer .comment span{
+      font-weight: bold;
+      font-size: 1.2rem;
+      /* border: 2px solid red; */
+
+}
+
+footer .comment p{
+      width: 100%;
+      text-align: justify;
+      line-height: 1;
+margin: 0;
+font-size: .9rem;
+padding: .4% 0;
+/* color: var(--light-t); */
+      /* word-spacing: -.2rem; */
+}
+
+footer .content-container{
+     display: flex;
+     width: 100%;
+     flex-direction: column;
+     justify-content: space-between;
+     padding: 4%;
+}
+footer .content-container .content span{
+     font-weight: bold;
+}
+footer .content-container .content p{
+     text-decoration: none;
+     margin: 0;
+     padding: 1.5% 0;
+     /* border: 2px solid red; */
+
+}
+footer .content-container .content p a{
+     text-decoration: none;
+      font-size: .8rem;
+      color: black;
+      display: flex;
+}
+
+/* ============================== copyright ================================ */
+.copyright div{
+      text-align: center;
+      padding: 3%;
+      font-size: .8rem;
+      background-color: var(--light-bg);
+      color: var(--light-t);
+}
+}

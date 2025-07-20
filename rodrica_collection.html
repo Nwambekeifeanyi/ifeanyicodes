@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rodrica Collection</title>
+    <!-- ============= Bootstrap Link ================ -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+    <!-- <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" /> -->
+    <!-- <link rel="stylesheet" href="/bulma/css/bulma.min.css"> -->
+
+    <!-- =========== Boxicon Link ===================== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ================Fontawesome==================== -->
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+ <!-- =============================== aos animation ================================ -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/aos/aos.css" />
+
+    <!-- =============== External Stylesheet =========== -->
+    <link rel="stylesheet" href="./static/rodrica_collection.css" />
+  </head>
+  <body>
+
+    <div class="main-container">
+      <!-- =================================== topbar ==================================== -->
+     
+<div class="topbar small-top">
+      
+  <div class="identity">
+    <a href="">
+    
+      <div class="logo">
+        <img src="./static/images/rodrica_logo.jpg" alt="" />
+      </div>
+    </a>
+    <div class="name">Rodrica's Collection</div>
+  </div>
+
+  <div class="menu">
+    <button id="toggleOpen" onclick="openMenu()">
+      <i class="fa-solid fa-bars"></i>
+
+    </button>
+  </div>
+
+ 
+</div>
+
+<div class="small-menu" id="menu">
+  <div class="btns"><button id="toggleClose" onclick="closeMenu()"><i class="fa-solid fa-xmark"></i></button></div>
+
+  <div class="menu">
+    <ul>
+
+
+          <li>
+            <a href="">
+              <span class="icon">
+                <i class="fa-solid fa-house"></i>
+              </span>
+              <span class="title">home</span>
+            </a>
+          </li>
+    
+          
+          <li>
+            <a href="">
+              <span class="icon">
+                <i class="fa-solid fa-list"></i>
+              </span>
+              <span class="title">Bags</span>
+            </a>
+          </li>
+    
+          <li>
+            <a href="">
+              <span class="icon">
+                <i class="fa-solid fa-list"></i>
+              </span>
+              <span class="title">hairs</span>
+            </a>
+          </li>
+    
+          <li>
+            <a href="">
+              <span class="icon">
+                <i class="fa-solid fa-list"></i>
+              </span>
+              <span class="title">foot wears</span>
+            </a>
+          </li>
+    
+          <li>
+            <a href="">
+              <span class="icon">
+                <i class="fa-solid fa-list"></i>
+              </span>
+              <span class="title">fashion</span>
+            </a>
+          </li>
+    
+
+          <li>
+            <a href="">
+              <span class="title">Login</span>
+            </a>
+          </li>
+         
+
+      
+
+
+     
+    </ul>
+    
+  </div>
+</div>
+    
+    
+    <div class="topbar large-top">
+      
+      <div class="identity">
+        <a href="">
+        
+          <div class="logo">
+            <img src="./static/images/rodrica_logo.jpg" alt="" />
+          </div>
+        </a>
+        <div class="name">Rodrica's Collection</div>
+      </div>
+  
+      <!-- <div class="search">
+        <input type="text" />
+      </div> -->
+      <div class="menu">
+
+
+        <ul>
+          <li>
+            <a href="">
+              <span class="icon">
+                <i class="fa-solid fa-house"></i>
+              </span>
+              <span class="title">home</span>
+            </a>
+          </li>
+    
+        
+
+
+        
+              <li>
+                <a href="">
+                  <span class="icon">
+                    <i class="fa-solid fa-list"></i>
+                  </span>
+                  <span class="title">Bags</span>
+                </a>
+              </li>
+        
+              <li>
+                <a href="">
+                  <span class="icon">
+                    <i class="fa-solid fa-list"></i>
+                  </span>
+                  <span class="title">hairs</span>
+                </a>
+              </li>
+        
+              <li>
+                <a href="">
+                  <span class="icon">
+                    <i class="fa-solid fa-list"></i>
+                  </span>
+                  <span class="title">foot wears</span>
+                </a>
+              </li>
+        
+              <li>
+                <a href="">
+                  <span class="icon">
+                    <i class="fa-solid fa-list"></i>
+                  </span>
+                  <span class="title">fashion</span>
+                </a>
+              </li>
+
+
+              <li>
+                <a href="">
+                  <span class="title">Login</span>
+                </a>
+              </li>
+    
+    
+         
+        </ul>
+        
+      </div>
+      
+    </div>
+
+
+
+
+
+      <div class="home">
+        <div class="text"  data-aos="flip-left">
+          <span>Quality product</span>
+          <span>Quick <em>delivery</em></span>
+
+        </div>
+
+        <div class="image-container">
+          <div class="image">
+            
+            <img src="./static/images/rodrica_logo.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="product-container">
+
+       
+           
+            <a href="">
+    
+              <div class="product" data-aos="zoom-out-down">
+                <div class="image">
+                  <div class="quantity">13</div>
+                  <img src="./static/images/image_1.jpeg" alt="">
+                </div>
+      
+                <div class="text">
+                  <div class="name">Canvas</div>
+                  <div class="icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                               
+                  <div class="price">&#8358 23,000</div>
+                </div>
+              </div>
+            </a>
+
+
+            <a href="">
+    
+              <div class="product" data-aos="zoom-out-down">
+                <div class="image">
+                  <div class="quantity">20</div>
+                  <img src="./static/images/image_2.jpg" alt="">
+                </div>
+      
+                <div class="text">
+                  <div class="name">headset</div>
+                  <div class="icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                               
+                  <div class="price">&#8358 11,900</div>
+                </div>
+              </div>
+            </a>
+
+
+            <a href="">
+    
+              <div class="product" data-aos="zoom-out-down">
+                <div class="image">
+                  <div class="quantity">03</div>
+                  <img src="./static/images/image_3.jpg" alt="">
+                </div>
+      
+                <div class="text">
+                  <div class="name">hand bag</div>
+                  <div class="icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                               
+                  <div class="price">&#8358 23,000</div>
+                </div>
+              </div>
+            </a>
+
+
+
+            <a href="">
+    
+              <div class="product" data-aos="zoom-out-down">
+                <div class="image">
+                  <div class="quantity">13</div>
+                  <img src="./static/images/image_4.jpg" alt="">
+                </div>
+      
+                <div class="text">
+                  <div class="name">sandals</div>
+                  <div class="icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                               
+                  <div class="price">&#8358 10,000</div>
+                </div>
+              </div>
+            </a>
+
+            <!-- 5 -->
+            <a href="">
+    
+              <div class="product" data-aos="zoom-out-down">
+                <div class="image">
+                  <div class="quantity">43</div>
+                  <img src="./static/images/image_5.jpg" alt="">
+                </div>
+      
+                <div class="text">
+                  <div class="name">boot</div>
+                  <div class="icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                               
+                  <div class="price">&#8358 43,500</div>
+                </div>
+              </div>
+            </a>
+
+
+            <a href="">
+    
+              <div class="product" data-aos="zoom-out-down">
+                <div class="image">
+                  <div class="quantity">23</div>
+                  <img src="./static/images/image_6.jpg" alt="">
+                </div>
+      
+                <div class="text">
+                  <div class="name">microphone</div>
+                  <div class="icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                               
+                  <div class="price">&#8358 17,200</div>
+                </div>
+              </div>
+            </a>
+
+
+            <a href="">
+    
+              <div class="product" data-aos="zoom-out-down">
+                <div class="image">
+                  <div class="quantity">51</div>
+                  <img src="./static/images/image_7.jpeg" alt="">
+                </div>
+      
+                <div class="text">
+                  <div class="name">bluetooth</div>
+                  <div class="icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                               
+                  <div class="price">&#8358 13,700</div>
+                </div>
+              </div>
+            </a>
+
+
+            <a href="">
+    
+              <div class="product" data-aos="zoom-out-down">
+                <div class="image">
+                  <div class="quantity">43</div>
+                  <img src="./static/images/image_8.jpeg" alt="">
+                </div>
+      
+                <div class="text">
+                  <div class="name">wrist watch</div>
+                  <div class="icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                               
+                  <div class="price">&#8358 19,100</div>
+                </div>
+              </div>
+            </a>
+
+
+            <a href="">
+    
+              <div class="product" data-aos="zoom-out-down">
+                <div class="image">
+                  <div class="quantity">21</div>
+                  <img src="./static/images/image_9.jpg" alt="">
+                </div>
+      
+                <div class="text">
+                  <div class="name">dry fish</div>
+                  <div class="icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                               
+                  <div class="price">&#8358 23,000</div>
+                </div>
+              </div>
+            </a>
+
+
+
+            <a href="">
+    
+              <div class="product" data-aos="zoom-out-down">
+                <div class="image">
+                  <div class="quantity">23</div>
+                  <img src="./static/images/image_10.jpeg" alt="">
+                </div>
+      
+                <div class="text">
+                  <div class="name">fresh pepper</div>
+                  <div class="icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                               
+                  <div class="price">&#8358 3,100</div>
+                </div>
+              </div>
+            </a>
+
+
+            <a href="">
+    
+              <div class="product" data-aos="zoom-out-down">
+                <div class="image">
+                  <div class="quantity">23</div>
+                  <img src="./static/images/image_11.jpeg" alt="">
+                </div>
+      
+                <div class="text">
+                  <div class="name">irish potatoes</div>
+                  <div class="icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                               
+                  <div class="price">&#8358 4,800</div>
+                </div>
+              </div>
+            </a>
+
+
+            <a href="">
+    
+              <div class="product" data-aos="zoom-out-down">
+                <div class="image">
+                  <div class="quantity">73</div>
+                  <img src="./static/images/image_12.jpeg" alt="">
+                </div>
+      
+                <div class="text">
+                  <div class="name">puno headset</div>
+                  <div class="icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                               
+                  <div class="price">&#8358 9,400</div>
+                </div>
+              </div>
+            </a>
+         
+
+
+
+       
+
+       
+        
+      </div>
+
+
+      
+
+
+
+
+
+      
+    </div>
+    <section class="footer">
+
+    <div class="image">
+      <img src="./static/images/rodrica_logo2.jpg" alt="">
+    </div>
+
+    <div class="contact">
+      <h1>Contact</h1>
+      <p>+234 913 086 4252</p>
+      <p>+234 916 005 8739</p>
+      <p>support@rodricacollection.com</p>
+      <!-- <p>No. 3 Gunnning Rd Abakaliki, Ebonyi State</p> -->
+    </div>
+
+
+
+
+         
+  </section>
+  <p class="copyright"> &copy 2024 <a href="">ifeanyi codes</a> - All Rights Reserved.</p>
+
+    <!-- ===================Footer======================= -->
+
+<script src="/js/actions.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/aos/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

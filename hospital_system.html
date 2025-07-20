@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./static/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./static/hospital_system.css" />
+  </head>
+  <body>
+    <!-- navigation bar starts -->
+
+    <!-- ============== this container holds everything in sidebar(navigation bar) -->
+    <div id="container"> 
+      <div class="navigation">
+
+            <!-- ===================== sidebar menus ============================= -->
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon">IHMS</span>
+              <span class="title">ADMIN</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./dashboard.html">
+              <span class="icon">
+                <i class="fa-solid fa-house"></i>
+              </span>
+              <span class="title">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="./staffs.html">
+              <span class="icon">
+                <i class="fa-solid fa-users"></i>
+              </span>
+              <span class="title">Staffs</span>
+            </a>
+          </li>
+          <li>
+            <a href="./patient.html">
+              <span class="icon">
+                <i class="fa-solid fa-hospital-user"></i>
+              </span>
+              <span class="title">Patients</span>
+            </a>
+          </li>
+          <li>
+            <a href="./pharmacy.html">
+              <span class="icon">
+                <i class="fa-solid fa-house-chimney-medical"></i>
+              </span>
+              <span class="title">Pharmacies</span>
+            </a>
+          </li>
+          <li>
+            <a href="./department.html">
+              <span class="icon">
+                <i class="fa-solid fa-bed"></i>
+              </span>
+              <span class="title">Departments</span>
+            </a>
+          </li>
+          <li>
+            <a href="./ward.html">
+              <span class="icon">
+                  <i class="fa-solid fa-warehouse"></i>
+              </span>
+              <span class="title">Wards</span>
+            </a>
+          </li>
+          <li>
+            <a href="./disease.html">
+              <span class="icon">
+                  <i class="fa-solid fa-disease"></i>
+              </span>
+              <span class="title">Diseases</span>
+            </a>
+          </li>
+          <li>
+            <a href="./admin-profile.html">
+              <span class="icon">
+                <i class="fa-regular fa-user"></i>
+              </span>
+              <span class="title">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </span>
+              <span class="title">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- navigation bar ends -->
+
+    <!-- main starts -->
+
+    <!-- ================== the main contains everything in the page excluding the sidebar========== -->
+    <div class="main">
+
+      <!-- ========= topbar starts ========= -->
+      <div class="topbar">
+        <div class="toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="user">
+            <div class="name">ifeanyi codes</div>
+            <div class="image">
+          <img src="./static/images/profile3.png" alt="" />
+            </div>
+        </div>
+      </div>
+      <!-- ========= topbar ends ========= -->
+
+
+      <!-- ================= the content contain everythingin the main excluding the topbar ========== -->
+      <div class="content">
+
+            <!-- ===== this is 8/12 of the content ======= -->
+        <div class="info_container">
+            <!-- ========== this contains the duplicate of the nav menus ============ -->
+          <div class="activities">
+
+
+
+              <div class="card_container">
+                <div class="cardbox">
+                  <div class="name">
+                    <i class="fa-solid fa-users"></i>Staffs
+                  </div>
+                  <div class="number">20</div>
+                  <div class="view"><a href="./staffs.html">View</a></div>
+                </div>
+              </div>
+
+
+
+
+
+              <div class="card_container">
+                <div class="cardbox">
+                  <div class="name">
+                    <i class="fa-solid fa-hospital-user"></i>Patients
+                  </div>
+                  <div class="number">213</div>
+                  <div class="view"><a href="./patient.html">View</a></div>
+                </div>
+              </div>
+
+              <div class="card_container">
+                <div class="cardbox">
+                  <div class="name">
+                    <i class="fa-solid fa-house-chimney-medical"></i> Pharmacy
+                  </div>
+                  <div class="number">10</div>
+                  <div class="view"><a href="./pharmacy.html">View</a></div>
+                </div>
+              </div>
+
+              <div class="card_container">
+                <div class="cardbox">
+                  <div class="name">
+                    <i class="fa-solid fa-bed"></i>Departments
+                  </div>
+                  <div class="number">48</div>
+                  <div class="view"><a href="./department.html">View</a></div>
+                </div>
+              </div>
+
+              <div class="card_container">
+                <div class="cardbox">
+                  <div class="name"><i class="fa-solid fa-warehouse"></i>Wards</div>
+                  <div class="number">122</div>
+                  <div class="view"><a href="./ward.html">View</a></div>
+                </div>
+              </div>
+
+              <div class="card_container">
+                <div class="cardbox">
+                  <div class="name"><i class="fa-solid fa-disease"></i>Diseases</div>
+                  <div class="number">155</div>
+                  <div class="view"><a href="./disease.html">View</a></div>
+                </div>
+              </div>
+
+
+          </div>
+        </div>
+
+
+        <!-- ========== this is the section for the staff ============== -->
+             <!-- =================it takes 4/8 of the remaining content section =========== -->
+        <div class="admins_container">
+          <h3>Admins</h3>
+
+          <!-- ============ this are cards for individual staff ===================  -->
+          <div class="admin_card">
+            <div class="name">Dr ifeanyi</div>
+            <div class="dept">CSC</div>
+          </div>
+
+          <div class="admin_card">
+            <div class="name">Dr ifeanyinwuzor</div>
+            <div class="dept">computer science department</div>
+          </div>
+          <div class="admin_card">
+            <div class="name">Dr Nwambeke</div>
+            <div class="dept">Biology department</div>
+          </div>
+          <div class="admin_card">
+            <div class="name">Dr Smith</div>
+            <div class="dept">Mathematics department</div>
+          </div>
+          <div class="admin_card">
+            <div class="name">Dr Ben</div>
+            <div class="dept">english department</div>
+          </div>
+          <div class="admin_card">
+            <div class="name">Dr Samuel</div>
+            <div class="dept">language department</div>
+          </div>
+          <div class="admin_card">
+            <div class="name">Dr bright</div>
+            <div class="dept">statistics department</div>
+          </div>
+          <div class="admin_card">
+            <div class="name">Dr dan</div>
+            <div class="dept">geo-physics department</div>
+          </div>
+          <div class="admin_card">
+            <div class="name">Dr chris</div>
+            <div class="dept">religion department</div>
+          </div>
+          <div class="admin_card">
+            <div class="name">Dr chuks</div>
+            <div class="dept">physics department</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- main ends -->
+
+    <!-- <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script> -->
+    <script src="./static/src/dashboard.js"></script>
+  </body>
+</html>

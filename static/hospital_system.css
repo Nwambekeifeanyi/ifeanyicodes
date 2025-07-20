@@ -1,0 +1,703 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========== color declaration ============== */
+:root {
+  --main_bg: rgb(52, 73, 52);
+  --white: white;
+  --gray: gray;
+  --light: rgb(231, 219, 219);
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ================= this holds everything in the admin page */
+#container {
+  position: relative;
+  width: 100%;
+}
+/* ======================== navigation bar ============================= */
+.navigation {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background-color: var(--main_bg);
+  border-left: 10px solid var(--main_bg);
+  transition: 0.5s;
+  overflow: hidden;
+  /* border: none; */
+}
+
+/* =========== this sytles the icons in sidebar (.navigation) */
+.navigation ul li a .icon {
+  position: absolute;
+  left: -5px;
+}
+
+/* =========== this sytles the menu e.g staffs, pharmacy etc in sidebar (.navigation) */
+.navigation ul li a .title {
+  position: absolute;
+  left: 8px;
+  text-transform: capitalize;
+}
+
+/* ================= this handle the width of the navbar on toggle ============= */
+.navigation.active {
+  width: 100px;
+}
+
+.navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navigation ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+/* ======this is responsible for hover effect and making the menu active onmouseover ============ */
+.navigation ul li:hover,
+.navigation ul li.hovered {
+  background-color: var(--white);
+}
+
+/* =========== this keeps the list(brand) separate from other lists in the nav ============= */
+.navigation ul li:nth-child(1) {
+  margin-bottom: 15%;
+  pointer-events: none;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.navigation ul li:hover a,
+.navigation ul li.hovered a {
+  color: var(--main_bg);
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1rem;
+}
+.navigation ul li a .title {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  min-width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: start;
+  white-space: nowrap;
+  /* font-size: 1.7rem; */
+}
+
+/* ================ curve effect on hover =============  */
+
+.navigation ul li:hover a::before,
+.navigation ul li.hovered a::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 35px 35px 0 10px var(--white);
+  background-color: transparent;
+}
+
+.navigation ul li:hover a::after,
+.navigation ul li.hovered a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 35px -35px 0 10px var(--white);
+  background-color: transparent;
+}
+
+/* ======================== main ==================== */
+
+.main {
+  position: absolute;
+  width: calc(100% - 250px);
+  height: 100%;
+  left: 250px;
+  background: var(--white);
+  transition: 0.5s;
+}
+.main.active {
+  width: calc(100% - 80px);
+  left: 100px;
+}
+
+.topbar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  background-color: var(--light);
+  /* border: 2px solid black; */
+}
+
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.user{
+      width: 35%;
+      display: flex;
+      justify-content: center;
+}
+
+.user .name{
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: capitalize;
+      margin-right: -10%;
+}
+.user .image{
+      position: relative;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      cursor: pointer;
+    }
+.user img{
+  position: absolute;
+  top: 0;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+/* =========================================== content ================================= */
+.content {
+  height: calc(100% - 60px);
+  position: absolute;
+  left: 10px;
+  width: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  padding-top: 2%;
+}
+
+
+/* ====================================== info_container ============================= */
+.info_container{
+  /* border: 2px solid green; */
+  width: 65%;
+}
+.info_container .activities{
+  /* border: 2px solid rgb(76, 0, 255); */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* width: 75%; */
+  /* width: 75%; */
+}
+
+
+.content .activities .card_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  height: 150px;
+  margin-bottom: 5%;
+  /* border: 2px solid rgb(247, 0, 255); */
+  
+}
+.content .activities .cardbox {
+  width: 95%;
+  height: 100%;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 7px;
+  background-color: var(--light);
+  box-shadow: 1px 1px 10px rgb(197, 197, 197);
+  /* border: 2px solid rgb(247, 0, 255); */
+
+
+
+}
+.content .activities .cardbox .name {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--main_bg);
+  padding-top: 20px;
+}
+.content .activities .cardbox .name i{
+  padding-right: 10px;
+}
+.content .activities .cardbox .number {
+  text-align: center;
+  font-size: 1.8rem;
+  padding-top: 10px;
+
+}
+.content .activities .cardbox .view {
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 10px;
+
+}
+.content .activities .cardbox .view a {
+  text-decoration: none;
+  border: 3px solid var(--main_bg);
+  padding: 5px;
+  width: 15%;
+  border-radius: 5px;
+  color: var(--main_bg);
+}
+.content .activities .cardbox .view a:hover {
+  background-color: var(--main_bg);
+  color: var(--light);
+}
+
+
+/* ======================================== .admins_container ==================================== */
+.admins_container {
+  /* border: 2px solid black; */
+  width: 35%;
+  background-color: var(--light);
+  border-top-left-radius: 7px;
+    border: 1px solid rgb(173, 173, 173);
+  box-shadow: 1px 1px 10px rgb(197, 197, 197);
+
+
+}
+.admins_container h3 {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.admins_container .admin_card {
+  width: 90%;
+  margin-left: 3%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  color: var(--main_bg);
+  justify-content: space-between;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(177, 177, 177);
+}
+
+.admins_container .admin_card .name {
+  text-align: initial;
+  font-size: 0.8rem;
+  padding: 3%;
+  text-transform: capitalize;
+}
+.admins_container .admin_card .dept {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 0.8rem;
+  padding: 3%;
+  text-transform: capitalize;
+}
+
+
+/* Tablets (Landscape) */
+@media (max-width: 1024px) {
+
+
+
+}
+
+/* Tablets (Landscape) */
+@media (max-width: 850px) {
+
+
+
+}
+
+/* Tablets (Portrait) */
+@media (max-width: 768px) {
+
+
+}
+
+
+
+/* Large Phones / Palmtops */
+@media (max-width: 600px) {
+
+  
+
+}
+
+/* Phones */
+@media (max-width: 480px) {
+/* ================= this holds everything in the admin page */
+#container {
+  position: relative;
+  width: 100%;
+}
+/* ======================== navigation bar ============================= */
+.navigation {
+  position: fixed;
+  /* width: 250px; */
+   width: 60px;
+  height: 100%;
+  background-color: var(--main_bg);
+  border-left: 10px solid var(--main_bg);
+  transition: 0.5s;
+  overflow: hidden;
+  /* border: none; */
+}
+
+/* =========== this sytles the icons in sidebar (.navigation) */
+.navigation ul li a .icon {
+  position: absolute;
+  left: -5px;
+}
+
+/* =========== this sytles the menu e.g staffs, pharmacy etc in sidebar (.navigation) */
+.navigation ul li a .title {
+  position: absolute;
+  left: 8px;
+  text-transform: capitalize;
+}
+
+/* ================= this handle the width of the navbar on toggle ============= */
+.navigation.active {
+  width: 100px;
+}
+
+.navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navigation ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+/* ======this is responsible for hover effect and making the menu active onmouseover ============ */
+.navigation ul li:hover,
+.navigation ul li.hovered {
+  background-color: var(--white);
+}
+
+/* =========== this keeps the list(brand) separate from other lists in the nav ============= */
+.navigation ul li:nth-child(1) {
+  margin-bottom: 15%;
+  pointer-events: none;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.navigation ul li:hover a,
+.navigation ul li.hovered a {
+  color: var(--main_bg);
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1rem;
+}
+.navigation ul li a .title {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  min-width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: start;
+  white-space: nowrap;
+  /* font-size: 1.7rem; */
+}
+
+/* ================ curve effect on hover =============  */
+
+.navigation ul li:hover a::before,
+.navigation ul li.hovered a::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 35px 35px 0 10px var(--white);
+  background-color: transparent;
+}
+
+.navigation ul li:hover a::after,
+.navigation ul li.hovered a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 35px -35px 0 10px var(--white);
+  background-color: transparent;
+}
+
+/* ======================== main ==================== */
+
+.main {
+  position: absolute;
+  width: calc(100% - 60px);
+  height: 100%;
+  left: 60px;
+  background: var(--white);
+  transition: 0.5s;
+  /* border: 2px solid black; */
+
+} 
+.main.active {
+  width: calc(100% - 80px);
+  left: 100px;
+}
+
+.topbar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  background-color: var(--light);
+  /* border: 2px solid black; */
+}
+
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+  cursor: pointer;
+  /* border: 2px solid black; */
+
+}
+
+.user{
+      width: 45%;
+      display: flex;
+      justify-content: space-between;
+
+  /* border: 2px solid black; */
+
+}
+
+.user .name{
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: capitalize;
+      margin-right: -10%;
+
+      
+      font-size: .8rem;
+}
+
+  
+
+
+/* =========================================== content ================================= */
+.content {
+  height: calc(100% - 60px);
+  position: absolute;
+  left: 10px;
+  width: 97%;
+  /* border: 2px solid red; */
+  display: flex;
+  padding-top: 2%;
+
+  flex-direction: column;
+  overflow-y: scroll;
+  margin-top: 10px;
+}
+
+
+/* ====================================== info_container ============================= */
+.info_container{
+  /* border: 2px solid green; */
+  width: 100%;
+}
+.info_container .activities{
+  /* border: 2px solid rgb(76, 0, 255); */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* width: 75%; */
+  /* width: 75%; */
+  overflow: hidden;
+
+}
+
+
+.content .activities .card_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  height: 150px;
+  margin-bottom: 5%;
+  /* border: 2px solid rgb(247, 0, 255); */
+  
+}
+.content .activities .cardbox {
+  width: 85%;
+  height: 95%;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 7px;
+  background-color: var(--light);
+  box-shadow: 1px 1px 10px rgb(197, 197, 197);
+  /* border: 2px solid rgb(247, 0, 255); */
+
+
+
+}
+.content .activities .cardbox .name {
+  text-align: center;
+  font-size: .7rem;
+  color: var(--main_bg);
+  padding-top: 20px;
+}
+.content .activities .cardbox .name i{
+ padding-right: 10px;
+}
+.content .activities .cardbox .number {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 10px;
+
+}
+.content .activities .cardbox .view {
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 10px;
+
+}
+.content .activities .cardbox .view a {
+  text-decoration: none;
+  border: 2px solid var(--main_bg);
+  padding: 5px;
+  width: 15%;
+  border-radius: 5px;
+  color: var(--main_bg);
+}
+.content .activities .cardbox .view a:hover {
+  background-color: var(--main_bg);
+  color: var(--light);
+}
+
+
+/* ======================================== .admins_container ==================================== */
+.admins_container {
+  /* border: 2px solid black; */
+  width: 95%;
+  background-color: var(--light);
+  border-top-left-radius: 7px;
+    border: 1px solid rgb(173, 173, 173);
+  box-shadow: 1px 1px 10px rgb(197, 197, 197);
+padding-bottom: 10px;
+
+}
+.admins_container h3 {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.admins_container .admin_card {
+  width: 90%;
+  margin-left: 3%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  color: var(--main_bg);
+  justify-content: space-between;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(177, 177, 177);
+}
+
+.admins_container .admin_card .name {
+  text-align: initial;
+  font-size: 0.8rem;
+  padding: 3%;
+  text-transform: capitalize;
+}
+.admins_container .admin_card .dept {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 0.8rem;
+  padding: 3%;
+  text-transform: capitalize;
+}
+}

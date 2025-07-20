@@ -172,7 +172,7 @@
     cursor: pointer;
   }
   .text p{
-    line-height: 0.5;
+    line-height: 1;
     font-size: 1.5rem;
 
   }
@@ -256,7 +256,7 @@
   }
   .project-container .project{
     width: 250px;
-    height: 310px;
+    height: 340px;
     border: 1px solid rgb(122, 122, 122);
     overflow: hidden;
     padding: 1%;
@@ -298,8 +298,26 @@
     
 
   }
+  .project-container .project .text .languages{
+   font-size: .8rem;
+   padding-top: 10px;
+
+  }
+  .project-container .project .text .btns{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+
+  }
   .project-container .project .text a button{
     color: blue;
+    font-size: .9rem;
+    padding: 0;
+    margin: 0;
+
+  }
+  .project-container .project .text .btns a:nth-child(2) button{
+    color: var(--main-bg);
     font-size: .9rem;
     padding: 0;
     margin: 0;
@@ -375,8 +393,7 @@
       /* border: 2px solid rgb(235, 100, 100); */
     }
   }
-
-
+  
   /* ======================================== home =================================== */
   @media only screen and (max-width: 920px){
   .home{
@@ -503,7 +520,6 @@
 
    
   }
-
   
   /* ================================== about-container ================================= */
   @media only screen and (max-width: 920px){
@@ -525,7 +541,6 @@
   }
 
   }
-
 
   /* =================================== project-container ============================ */
   @media only screen and (max-width: 920px){
